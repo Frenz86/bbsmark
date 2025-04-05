@@ -22,7 +22,7 @@ def main():
 	# response = requests.get(url)
 	# image = Image.open(BytesIO(response.content))
 	st.title("Marketing Simulator")
-	st.image(image, caption='',use_container_width=True)
+	#st.image(image, caption='',use_container_width=True)
 	##############################################################
 
 
