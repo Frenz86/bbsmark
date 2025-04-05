@@ -13,15 +13,6 @@ name = 'MARKETING-SIMULATION'
 
 def main():
 	# ################ css background #########################
-	page_bg_img = '''
-	<style>
-	body {
-	background-image: url("https://i.pinimg.com/originals/85/6f/31/856f31d9f475501c7552c97dbe727319.jpg");
-	background-size: cover;
-	}
-	</style>
-	'''
-	st.markdown(page_bg_img, unsafe_allow_html=True)
 ############################################################
 	################ load logo from web #########################
 	from PIL import Image
@@ -31,7 +22,7 @@ def main():
 	response = requests.get(url)
 	image = Image.open(BytesIO(response.content))
 	st.title("Marketing Simulator")
-	st.image(image, caption='',use_column_width=True)
+	st.image(image, caption='',use_container_width=True)
 	##############################################################
 
 

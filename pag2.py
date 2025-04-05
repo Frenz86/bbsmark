@@ -42,7 +42,7 @@ def main():
     st.button("Re-run")
     #st.title("Advertising Analytics")
     image = Image.open('./image/Silvi1.jpeg')
-    st.image(image,use_column_width=True)
+    st.image(image,use_container_width =True)
 
     #% VENDITE LINEA1
     var1=st.number_input('% vendite linea1',value=40,max_value=100,step=1)
