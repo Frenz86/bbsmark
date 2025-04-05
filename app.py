@@ -18,9 +18,9 @@ def main():
 	from PIL import Image
 	import requests
 	from io import BytesIO
-	url='https://frenzy86.s3.eu-west-2.amazonaws.com/fav/logo.png'
-	response = requests.get(url)
-	image = Image.open(BytesIO(response.content))
+	# url='https://frenzy86.s3.eu-west-2.amazonaws.com/fav/logo.png'
+	# response = requests.get(url)
+	# image = Image.open(BytesIO(response.content))
 	st.title("Marketing Simulator")
 	st.image(image, caption='',use_container_width=True)
 	##############################################################
